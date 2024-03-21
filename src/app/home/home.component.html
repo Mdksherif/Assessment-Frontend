@@ -1,0 +1,42 @@
+
+<body>
+
+<header>
+  <h3>Student Data Portal</h3>
+  <button class="btn btn-success" (click)="logout()"> logout</button>
+</header>
+
+<div class="content">
+  <h4>Student Data</h4>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Student Name</th>
+        <th>Course</th>
+        <th>Fees</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let StudentItem of StudentArray">
+        <td>{{StudentItem.id }}</td>
+        <td>{{StudentItem.stname }}</td>
+        <td>{{StudentItem.course }}</td>
+        <td>{{StudentItem.fee }}</td>
+        <td>
+            <button type="button" class="btn btn-success"  (click)="setUpdate()">Edit</button>
+            <button style="margin-left: 5%;" type="button" class="btn btn-danger" (click)="setDelete()">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>  
+
+<footer>
+  <p>&copy; 2024 Student Data Portal. All rights reserved.</p>
+</footer>
+
+</body>
+

@@ -1,0 +1,24 @@
+<div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div><h3>Login Form </h3>
+        <div class="mb-3">
+            <label for="username">Username</label>
+            <input type="text" formControlName="username" class="form-control" id="username" placeholder="Username">
+            <span class="text-danger" *ngIf="loginForm.controls.username.hasError('required')&& (loginForm.controls.username.dirty || loginForm.controls.username.touched)">
+                First Name is Invalid
+            </span>
+          </div>
+          <div class="mb-3">
+            <label for="password">Password</label>
+            <input type="password" formControlName="password" class="form-control" id="password" placeholder="Password">
+            <span class="text-danger" *ngIf="loginForm.controls.password.hasError('required')&& (loginForm.controls.password.dirty || loginForm.controls.password.touched)">
+                First Name is Invalid
+            </span>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+          <button style="margin-left: 188px;" type="button" class="btn btn-primary" (click)="onSignup()">Signup</button>
+      </div>
+    </form>
+  </div>
+  
+  

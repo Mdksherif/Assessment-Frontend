@@ -1,0 +1,61 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Default font with Google Font 'Roboto' */
+    margin: 0;
+    padding: 0;
+    // background-color: #f8f9fa; /* Light gray background */
+  }
+  
+  header {
+    background-color: #343a40; /* Dark gray background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  footer {
+    background-color: #343a40; /* Dark gray background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .content {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 1.1);/* Subtle shadow */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflow for rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  th, td {
+    border: 1px solid #dee2e6; /* Light gray border */
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #343a40; /* Dark gray background */
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f1f1f1; /* Light gray background for even rows */
+  }
+  
+  tr:hover {
+    background-color: #e9ecef; /* Slightly darker gray on hover */
+  }
+  
